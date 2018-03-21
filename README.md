@@ -6,6 +6,14 @@ This proof of concept sets a file association for the .bpmn extension
 and opens the electron app automatically when double clicking on a ```.bpmn```
 file.
 
+## How to use it
+
+- ```npm install```
+- ```npm run build```
+
+Then go into the dist folder. There you will find a ```.dmg``` file for MacOS
+and a ```.exe``` file for Windows.
+
 ## How to get the file path on Windows
 
 On Windows the file path of the file which has to be opened is saved as a value
