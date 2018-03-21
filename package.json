@@ -1,21 +1,37 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "electron_file-association_poc",
   "version": "1.0.0",
   "description": "A minimal file association demo",
   "main": "src/main.js",
   "scripts": {
     "start": "electron src/main.js",
-    "build": "build --mac --win"
+    "build": "electron-builder -mw"
   },
   "repository": "https://github.com/electron/electron-quick-start-typescript",
   "build": {
-    "fileAssociations": [
-      {
-        "ext": ["bpmn"],
-        "name": "BPMN",
-        "description": "BPMN diagram extension"
-      }
-    ]
+    "nsis": {
+      "perMachine": true,
+      "oneClick": false
+    },
+    "win": {
+      "target": "nsis",
+      "fileAssociations": [
+        {
+          "ext": ["bpmn"],
+          "name": "BPMN",
+          "description": "BPMN diagram extension"
+        }
+      ]
+    },
+    "mac": {
+      "target": "dmg",
+      "fileAssociations": [
+        {
+          "ext": ["bpmn"],
+          "name": "BPMN"
+        }
+      ]
+    }
   },
   "license": "MIT",
   "devDependencies": {
