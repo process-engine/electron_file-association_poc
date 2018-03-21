@@ -34,7 +34,7 @@ The file path is then saved in the path variable.
 
 You simply read the file with
 ```javascript
-fs.readFileSync(<filePath>, 'utf-8)
+fs.readFileSync(<filePath>, 'utf-8')
 ```
 and save the output into a variable.
 
