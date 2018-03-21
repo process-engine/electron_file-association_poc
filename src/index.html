@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron File Association</title>
+  </head>
+  <body>
+    <h1>File Association example</h1>
+  </body>
+  <script>
+    if (window.require) {
+      window.nodeRequire = require;
+      delete window.require;
+    }
+  </script>
+  <script src="renderer.js"></script>
+</html>

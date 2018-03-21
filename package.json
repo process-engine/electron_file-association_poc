@@ -1,0 +1,25 @@
+{
+  "name": "electron-quick-start-typescript",
+  "version": "1.0.0",
+  "description": "A minimal file association demo",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron src/main.js",
+    "build": "build --mac --win"
+  },
+  "repository": "https://github.com/electron/electron-quick-start-typescript",
+  "build": {
+    "fileAssociations": [
+      {
+        "ext": ["bpmn"],
+        "name": "BPMN",
+        "description": "BPMN diagram extension"
+      }
+    ]
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.7.11",
+    "electron-builder": "^20.5.1"
+  }
+}
