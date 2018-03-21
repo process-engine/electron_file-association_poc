@@ -32,7 +32,7 @@ app.on('window-all-closed', () => {
 app.on('will-finish-launching', function() {
   let filePath;
 
-  electron.ipcMain.on('get_opend_file', (event) => {
+  electron.ipcMain.on('get_opened_file', (event) => {
     if (filePath === undefined) {
       return;
     }
